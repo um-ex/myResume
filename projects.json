@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Portfolio Site",
+    "description": "This site showcasing my resume, projects, and contact information.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "links": {
+      "demo": "#",
+      "repo": "#"
+    }
+  },
+  {
+    "title": "Sample Project",
+    "description": "A placeholder project. Replace with your work.",
+    "tech": ["Your Tech"],
+    "links": {
+      "demo": "#",
+      "repo": "#"
+    }
+  }
+]

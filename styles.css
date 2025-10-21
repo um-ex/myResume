@@ -5,6 +5,7 @@
   --text: #1f2937;
   --muted: #6b7280;
   --accent: #2563eb;
+  --accent-contrast: #fff;
   --radius: 12px;
   --shadow: 0 8px 20px rgba(0,0,0,0.06);
 }
@@ -39,6 +40,8 @@ h1 { font-size: 32px; letter-spacing: -0.02em; }
 h2 { font-size: 20px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; }
 
 .section { margin-top: 24px; }
+ .hero { margin-bottom: 8px; }
+ .sub { color: var(--muted); margin-top: 4px; }
 
 .grid {
   display: grid;
@@ -57,3 +60,40 @@ h2 { font-size: 20px; color: var(--muted); font-weight: 600; text-transform: upp
 .link:hover { text-decoration: underline; }
 
 .footer { margin-top: 32px; color: var(--muted); font-size: 14px; text-align: center; }
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.brand { font-weight: 700; letter-spacing: 0.2px; }
+.nav-links { display: flex; gap: 16px; }
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 800px) {
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+}
+.project-card {
+  border: 1px solid #eef0f3;
+  border-radius: 10px;
+  padding: 16px;
+}
+.project-title { margin: 0 0 6px; font-size: 18px; }
+.project-links { margin-top: 8px; display: flex; gap: 12px; }
+
+/* Tags */
+.tags { list-style: none; padding: 0; margin: 8px 0 0; display: flex; gap: 8px; flex-wrap: wrap; }
+.tag {
+  background: #eef2ff;
+  color: #3730a3;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+}
